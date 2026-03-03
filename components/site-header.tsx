@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/voorraad", label: "Onze voorraad" },
   { href: "/over-ons", label: "Over ons" },
   { href: "/konings-scania-power", label: "Konings Scania Power" },
+  { href: "/ons-merk", label: "Ons Merk" },
   { href: "/nieuws", label: "Nieuws" },
   { href: "/contact", label: "Contact" },
 ]
@@ -42,7 +43,7 @@ export function SiteHeader() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <Image
-              src="https://www.holdingkonings.nl/img/logo.png"
+              src="/logo.png"
               alt="Holding Konings"
               width={160}
               height={48}
