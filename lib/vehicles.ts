@@ -1,0 +1,221 @@
+const BASE = "https://www.holdingkonings.nl/img"
+
+export interface Vehicle {
+  id: number
+  title: string
+  slug: string
+  thumbnail: string
+  shortDescription: string[]
+  detailInfo: string[] | null
+  photos: string[]
+  sold: boolean
+}
+
+export const vehicles: Vehicle[] = [
+  {
+    id: 1,
+    title: "Mercedes Benz SL",
+    slug: "mercedes-benz-sl",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_16_1769695804_MB-SL-3.jpg`,
+    shortDescription: ["Te koop Mercedes Benz SL", "Bouwjaar 2003", "43.642 km", "€ 50.000,-"],
+    detailInfo: null,
+    photos: [
+      `${BASE}/voorraad_16_1769695704_MB-SL-3.jpg`,
+      `${BASE}/voorraad_16_1769695712_MB-SL-4.jpg`,
+      `${BASE}/voorraad_16_1769695722_MB-SL-6.jpg`,
+      `${BASE}/voorraad_16_1769695731_MB-SL-7.jpg`,
+      `${BASE}/voorraad_16_1769695738_MB-SL-8.jpg`,
+    ],
+  },
+  {
+    id: 2,
+    title: "Porsche GT3",
+    slug: "porsche-gt3",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_15_1769695415_Porsche-2.jpg`,
+    shortDescription: ["Te koop Porsche GT3", "Bouwjaar 2014", "41.385 km", "Prijs € 150.000,-"],
+    detailInfo: null,
+    photos: [
+      `${BASE}/voorraad_15_1769695427_Porsche-3.jpg`,
+      `${BASE}/voorraad_15_1769695449_Porsche-5.jpg`,
+      `${BASE}/voorraad_15_1769695458_Porsche-6.jpg`,
+    ],
+  },
+  {
+    id: 3,
+    title: "Mercedes Benz Sprinter 311",
+    slug: "mercedes-benz-sprinter-311",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_14_1763036775_IMG-9525.jpg`,
+    shortDescription: ["Te koop Mercedes Benz Sprinter 311 NIEUW!!", "BPM vrij", "Registratie 2024", "Prijs: € 39.000,-"],
+    detailInfo: null,
+    photos: [
+      `${BASE}/voorraad_14_1763036792_IMG-9524.jpg`,
+      `${BASE}/voorraad_14_1763036805_IMG-9523.jpg`,
+      `${BASE}/voorraad_14_1763036820_IMG-9528.jpg`,
+      `${BASE}/voorraad_14_1763036832_IMG-9533.jpg`,
+      `${BASE}/voorraad_14_1763036845_IMG-9531.jpg`,
+    ],
+  },
+  {
+    id: 4,
+    title: "Showtruck Scania S530",
+    slug: "showtruck-scania-s530",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_13_1742897362_Scania-S530-65BZV6-4.jpg`,
+    shortDescription: ["Te koop: Scania S530", "Bouwjaar 2023", "Prijs € 285.000,00"],
+    detailInfo: null,
+    photos: [
+      `${BASE}/voorraad_13_1742897395_Scania-S530-65BZV6-2.jpg`,
+      `${BASE}/voorraad_13_1742897407_Scania-S530-65BZV6-3.jpg`,
+      `${BASE}/voorraad_13_1742897430_Scania-S530-65BZV6-5.jpg`,
+    ],
+  },
+  {
+    id: 5,
+    title: "DAF XG 480 FT",
+    slug: "daf-xg-480-ft",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_12_1732192545_DAF-XG-86-BTR-1-2-VERKOCHT.jpg`,
+    shortDescription: ["Te koop: DAF XG 480 FT"],
+    detailInfo: ["Bouwjaar 24-11-2022", "Kilometerstand 44600", "Nog 26 maanden volledige DAF fabrieksgarantie"],
+    photos: [
+      `${BASE}/voorraad_12_1694863966_DAF-XG-86-BTR-1.jpg`,
+      `${BASE}/voorraad_12_1694863975_DAF-XG-86-BTR-1-2.jpg`,
+    ],
+  },
+  {
+    id: 6,
+    title: "Showtruck Scania 144 V8",
+    slug: "showtruck-scania-144-v8",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_11_1747918807_Scania-BV-LJ-17-2-VERKOCHT.jpg`,
+    shortDescription: ["Te koop: Scania 144 V8"],
+    detailInfo: ["Bouwjaar 1998", "Kilometerstand 954600", "BTW wagen", "Bijzonderheden: nieuwe opbouw en M&M interieur"],
+    photos: [
+      `${BASE}/voorraad_11_1687854379_Scania-BN-NL-11-4.jpg`,
+      `${BASE}/voorraad_11_1687854388_Scania-BN-NL-11-6.jpg`,
+      `${BASE}/voorraad_11_1687854396_Scania-BN-NL-11-2.jpg`,
+      `${BASE}/voorraad_11_1687854405_Scania-BN-NL-11-3.jpg`,
+    ],
+  },
+  {
+    id: 7,
+    title: "VERKOCHT Decontaminatie unit",
+    slug: "verkocht-decontaminatie-unit",
+    sold: true,
+    thumbnail: `${BASE}/voorraad_10_1732191549_Deco-unit-5-verkocht.jpg`,
+    shortDescription: ["Te koop: Decontaminatie unit"],
+    detailInfo: ["Böhmer", "Bouwjaar 2022", "Nieuw"],
+    photos: [
+      `${BASE}/voorraad_10_1687853882_Deco-unit-3.jpg`,
+      `${BASE}/voorraad_10_1687853894_Deco-unit-6-binnenkant.jpg`,
+      `${BASE}/voorraad_10_1687853904_Deco-unit-6-binnenkant-3.jpg`,
+      `${BASE}/voorraad_10_1687853911_Deco-unit-6-binnenkant-4.jpg`,
+      `${BASE}/voorraad_10_1687853920_Deco-unit-6-binnenkant-2.jpg`,
+    ],
+  },
+  {
+    id: 8,
+    title: "Mercedes Benz",
+    slug: "mercedes-benz",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_9_1732191763_MB-VJ-40-XD-6-VERKOCHT.jpg`,
+    shortDescription: ["Te koop: Mercedes Benz 1935 LS-2"],
+    detailInfo: ["Bouwjaar 1990", "Kilometerstand 867601", "BTW wagen", "Bijzonderheden cabine is al opnieuw gespoten", "Bezichtiging op afspraak"],
+    photos: [
+      `${BASE}/voorraad_9_1687801862_MB-VJ-40-XD-3.jpg`,
+      `${BASE}/voorraad_9_1687801872_MB-VJ-40-XD-4.jpg`,
+      `${BASE}/voorraad_9_1687801890_MB-VJ-40-XD-5.jpg`,
+      `${BASE}/voorraad_9_1687801902_MB-VJ-40-XD-2.jpg`,
+    ],
+  },
+  {
+    id: 9,
+    title: "Oldtimer Scania 141 V8",
+    slug: "oldtimer-scania-141-v8",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_8_1687799240_68-BVK-8.jpg-6.jpg`,
+    shortDescription: ["Te koop: Scania 141 V8"],
+    detailInfo: ["Bouwjaar 1978", "Kilometerstand 1104600", "BTW wagen", "Prijs: € 95.000,-", "Bezichtiging op afspraak"],
+    photos: [
+      `${BASE}/voorraad_8_1687798809_68-BVK-8.jpg-5.jpg`,
+      `${BASE}/voorraad_8_1687798818_68-BVK-8.jpg-3.jpg`,
+      `${BASE}/voorraad_8_1687798827_68-BVK-8.jpg-2.jpg`,
+      `${BASE}/voorraad_8_1687798885_68-BVK-8.jpg`,
+      `${BASE}/voorraad_8_1687798897_68-BVK-8.jpg-4.jpg`,
+    ],
+  },
+  {
+    id: 10,
+    title: "Unimog",
+    slug: "unimog",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_7_1687799907_Unimog-3.jpg`,
+    shortDescription: ["Te koop: Unimog Bolkop"],
+    detailInfo: ["Bouwjaar 1976", "Kilometerstand 34950", "BTW wagen", "Bijzonderheden: Er zit een Werner lier op", "Prijs: € 20.000,-", "Bezichtiging op afspraak"],
+    photos: [
+      `${BASE}/voorraad_7_1687799931_Unimog-7.jpg`,
+      `${BASE}/voorraad_7_1687799953_Unimog-9.jpg`,
+      `${BASE}/voorraad_7_1687799969_Unimog-5.jpg`,
+      `${BASE}/voorraad_7_1687799983_Unimog-6.jpg`,
+      `${BASE}/voorraad_7_1687799992_Unimog-8.jpg`,
+    ],
+  },
+  {
+    id: 11,
+    title: "Oldtimer Volvo F88",
+    slug: "oldtimer-volvo-f88",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_6_1745910546_Volvo-BE-89-33-4-verkocht.jpg`,
+    shortDescription: ["Te koop: Oldtimer Volvo F88"],
+    detailInfo: ["Bouwjaar 1969", "Kilometerstand 1398773", "BTW wagen", "Bezichtiging op afspraak"],
+    photos: [
+      `${BASE}/voorraad_6_1687800341_Volvo-BE-89-33-4.jpg`,
+      `${BASE}/voorraad_6_1687800353_Volvo-BE-89-33.jpg`,
+      `${BASE}/voorraad_6_1687800366_Volvo-BE-89-33-2.jpg`,
+    ],
+  },
+  {
+    id: 12,
+    title: "Showtruck Scania 143 V8",
+    slug: "showtruck-scania-143-v8",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_5_1756972531_Scania-143-bewerkt-4-9.jpg`,
+    shortDescription: ["Te koop: SHOWTRUCK SCANIA 143 V8"],
+    detailInfo: ["Bouwjaar 1990", "Kilometerstand 1454737", "BTW wagen", "M&M interieur", "Prijs € 45.000,-", "Bezichtiging op afspraak"],
+    photos: [
+      `${BASE}/voorraad_5_1756972334_Scania-BN-NL-11-4.jpg`,
+      `${BASE}/voorraad_5_1756972346_Scania-BN-NL-11-3.jpg`,
+      `${BASE}/voorraad_5_1756972360_Scania-BN-NL-11.jpg`,
+      `${BASE}/voorraad_5_1756972373_Scania-BN-NL-11-2.jpg`,
+    ],
+  },
+  {
+    id: 13,
+    title: "Showtruck Scania 141 V8",
+    slug: "showtruck-scania-141-v8",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_1_1687800971_Scania-65-BPN-3-2.jpg`,
+    shortDescription: ["Te koop: SHOWTRUCK SCANIA 141 V8"],
+    detailInfo: ["Bouwjaar 1980", "Kilometerstand 1139500", "Gerestaureerd door Leo Bol", "BTW wagen", "Prijs € 95.000,-", "Bezichtiging op afspraak"],
+    photos: [
+      `${BASE}/voorraad_1_1687800987_Scania-65-BPN-3.jpg`,
+    ],
+  },
+  {
+    id: 14,
+    title: "Showtruck Scania 143 V8 Streamliner",
+    slug: "showtruck-scania-143-v8-streamliner",
+    sold: false,
+    thumbnail: `${BASE}/voorraad_4_1687801313_Scania-BX-LZ-72-3.jpg`,
+    shortDescription: ["Te koop: SHOWTRUCK SCANIA 143 V8 STREAMLINER"],
+    detailInfo: ["Bouwjaar 1995", "Kilometerstand 1336645", "BTW wagen", "Prijs € 60.000,-", "Bezichtiging op afspraak"],
+    photos: [
+      `${BASE}/voorraad_4_1687801341_Scania-BX-LZ-72-5.jpg`,
+      `${BASE}/voorraad_4_1687801356_Scania-BX-LZ-72.jpg`,
+      `${BASE}/voorraad_4_1687801368_Scania-BX-LZ-72-4.jpg`,
+    ],
+  },
+]
