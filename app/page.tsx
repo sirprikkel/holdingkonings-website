@@ -17,14 +17,14 @@ export default function HomePage() {
         {/* Background */}
         <div className="absolute inset-0">
           <Image
-            src="https://www.holdingkonings.nl/img/general/background-home7.jpg"
+            src="https://www.holdingkonings.nl/img/background-home7.jpg"
             alt="Holding Konings hero"
             fill
             priority
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-zinc-950" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-zinc-950" />
         </div>
 
         {/* Content */}
